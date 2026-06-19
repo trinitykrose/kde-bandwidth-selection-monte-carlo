@@ -1,15 +1,11 @@
 Comparing Parametric and Nonparametric Forecasting Models
 
 
-Defines a known data generating process (DGP) with a nonlinear log relationship, so that "ground truth" is known and model performance can be benchmarked against the true irreducible error.
-
-Compares bandwidth-selection methods for KDE — plug-in (Silverman) rule vs. least-squares cross-validation — showing that LSCV substantially outperforms the plug-in rule when the underlying distribution is non-normal (here, a U-shaped Beta distribution), reducing Integrated Squared Error by a factor of ~6.
-
-Runs a 200-replication Monte Carlo study comparing three OLS specifications (correctly specified vs. two misspecified variants) on out-of-sample forecast accuracy (MSPE, RMSPE, MAE).
-
-Extends the comparison to two nonparametric estimators — Nadaraya-Watson kernel regression and polynomial series regression — built and tuned from scratch (no off-the-shelf "compare models" library calls), including degree/bandwidth selection via cross-validation.
-
-Tests asymptotic convergence of the nonparametric estimators by repeating the simulation across sample sizes from 500 to 10,000, confirming theoretical convergence rates.
+1. Defines a known data generating process (DGP) with a nonlinear log relationship, so that "ground truth" is known and model performance can be benchmarked against the true irreducible error.
+2. Compares bandwidth-selection methods for KDE — plug-in (Silverman) rule vs. least-squares cross-validation — showing that LSCV substantially outperforms the plug-in rule when the underlying distribution is non-normal (here, a U-shaped Beta distribution), reducing Integrated Squared Error by a factor of ~6.
+3. Runs a 200-replication Monte Carlo study comparing three OLS specifications (correctly specified vs. two misspecified variants) on out-of-sample forecast accuracy (MSPE, RMSPE, MAE).
+4. Extends the comparison to two nonparametric estimators — Nadaraya-Watson kernel regression and polynomial series regression — built and tuned from scratch (no off-the-shelf "compare models" library calls), including degree/bandwidth selection via cross-validation.
+5. Tests asymptotic convergence of the nonparametric estimators by repeating the simulation across sample sizes from 500 to 10,000, confirming theoretical convergence rates.
 
 
 Key findings
